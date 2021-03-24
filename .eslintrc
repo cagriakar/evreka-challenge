@@ -1,0 +1,20 @@
+{
+    "root": true,
+    "extends": ["airbnb-typescript-prettier"],
+    "rules": {
+        // "jsx-a11y/anchor-is-valid": [
+        //     "error",
+        //     {
+        //         "components": ["Link"],
+        //         "specialLink": ["hrefLeft", "hrefRight"],
+        //         "aspects": ["invalidHref", "preferButton"]
+        //     }
+        // ],
+        // "@typescript-eslint/no-shadow": "off",
+        // "@typescript-eslint/no-use-before-define": "off",
+        // "comma-dangle": ["off", "never"],
+        // "react-native/sort-styles": "off",
+        // "react-native/no-inline-styles": "off",
+        // "react/jsx-props-no-spreading": "off"
+    }
+}

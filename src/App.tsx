@@ -1,26 +1,19 @@
+import { CssBaseline } from '@material-ui/core';
+import { ThemeProvider } from '@material-ui/core/styles';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import MainLayout from './layout/MainLayout';
+import theme from './assets/theme/theme';
+import EventContextsProvider from './context/EventContext';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = (): JSX.Element => {
+    return (
+        <EventContextsProvider>
+            <ThemeProvider theme={theme}>
+                <CssBaseline />
+                <MainLayout />
+            </ThemeProvider>
+        </EventContextsProvider>
+    );
+};
 
 export default App;
